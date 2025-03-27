@@ -3,11 +3,11 @@ export interface DenainaLocation {
   title: string;
   denainaName: string;
   denainaMeaning: string;
-  coordinates: [number, number] | number[];
-  description: string; 
-  culture: string;
+  coordinates: [number, number]; 
+  description: string[]; 
+  culture: string[]; 
   imageUrl: string;
-  videoUrl: string;
-  audioUrl: string;
+  videoUrl?: string;
+  audioUrl?: string;
 }
   

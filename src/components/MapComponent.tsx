@@ -7,7 +7,7 @@ import FullScreenInfo from "./FullScreenInfo";
 
 function MapComponent() {
   const [denainaLocationsMock] = useState<DenainaLocation[]>(
-    denainaLocationsMockData as unknown as DenainaLocation[]
+    denainaLocationsMockData as DenainaLocation[]
   );
   const [currentLocation, setCurrentLocation] =
     useState<DenainaLocation | null>(null);
