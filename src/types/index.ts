@@ -7,7 +7,7 @@ export interface DenainaLocation {
   description: string[]; 
   culture: string[]; 
   imageUrl: string;
-  videoUrl?: string;
-  audioUrl?: string;
+  videoUrl: string;
+  audioUrl: string;
 }
   
