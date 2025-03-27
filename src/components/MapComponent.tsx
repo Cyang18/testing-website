@@ -7,7 +7,7 @@ import FullScreenInfo from "./FullScreenInfo";
 
 function MapComponent() {
   const [denainaLocationsMock] = useState<DenainaLocation[]>(
-    denainaLocationsMockData as DenainaLocation[]
+    denainaLocationsMockData as unknown as DenainaLocation[]
   );
   const [currentLocation, setCurrentLocation] =
     useState<DenainaLocation | null>(null);
@@ -49,7 +49,7 @@ function MapComponent() {
         {denainaLocationsMock.map((location) => (
           <Marker
             key={location.id}
-            position={location.coordinates}
+            position={location.coordinates as [number, number]}
             eventHandlers={{
               mouseover: (event) => event.target.openPopup(),
               mouseout: (event) => event.target.closePopup(),
